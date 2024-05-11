@@ -1,3 +1,7 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 const serviceKey = {
   "type": process.env.SERVICE_TYPE,
   "project_id": process.env.SERVICE_PROJECT_ID,
@@ -12,5 +16,6 @@ const serviceKey = {
   "universe_domain": process.env.SERVICE_UNIVERSE_DOMAIN,
   "storageBucket": process.env.SERVICE_STORAGEBUCKET
 }
+console.log( process.env.SERVICE_STORAGEBUCKET)
 
 export default serviceKey;
