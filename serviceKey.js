@@ -1,4 +1,4 @@
-{
+const serviceKey = {
   "type": "service_account",
   "project_id": "foodorderapp-18590",
   "private_key_id": "721b8998b05afddec8c0bb0283456d5d13a22235",
@@ -10,5 +10,7 @@
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-zrpv5%40foodorderapp-18590.iam.gserviceaccount.com",
   "universe_domain": "googleapis.com",
-  "storageBucket":"gs://foodorderapp-18590.appspot.com"
+  "storageBucket": "gs://foodorderapp-18590.appspot.com"
 }
+
+export default serviceKey;

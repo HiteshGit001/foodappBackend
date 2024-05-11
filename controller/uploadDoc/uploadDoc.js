@@ -1,5 +1,6 @@
 import admin from 'firebase-admin';
-import serviceAccount from "../../serviceKey.json" assert {type: "json"};
+// import serviceAccount from "../../serviceKey" assert {type: "json"};
+import serviceAccount from "../../serviceKey.js"
 import { getStorage, ref, getDownloadURL, uploadBytesResumable } from "firebase/storage";
 import multer from "multer";
 import { initializeApp } from "firebase/app";
