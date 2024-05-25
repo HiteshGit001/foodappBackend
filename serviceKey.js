@@ -16,6 +16,5 @@ const serviceKey = {
   "universe_domain": process.env.SERVICE_UNIVERSE_DOMAIN,
   "storageBucket": process.env.SERVICE_STORAGEBUCKET
 }
-console.log( process.env.SERVICE_STORAGEBUCKET)
 
 export default serviceKey;

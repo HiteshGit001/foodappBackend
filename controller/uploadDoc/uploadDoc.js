@@ -15,7 +15,7 @@ const storage = getStorage();
 export const upload = multer({ storage: multer.memoryStorage() });
 
 export const uploadDoc = async (req, res) => {
-    const { foldername, categoryname, categoryId } = req.body;
+    const { foldername, type_name, categoryId } = req.body;
     try {
         const dateTime = giveCurrentDateTime();
         const storageRef = ref(storage, `${foldername}/${req.file.originalname + "       " + dateTime}`);
@@ -29,7 +29,7 @@ export const uploadDoc = async (req, res) => {
             message: 'file uploaded to firebase storage',
             name: req.file.originalname,
             type: req.file.mimetype,
-            categoryname,
+            type_name,
             categoryId,
             downloadURL: downloadURL
         })

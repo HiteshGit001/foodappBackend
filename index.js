@@ -24,3 +24,11 @@ mongoose.connect(mongodb, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => console.log(`server is running on port ${PORT}`)).catch(err => console.log(err));
+
+// const collection = db.collection('users'); 
+// const query = mongoId ? {  '_id': {   $gt: mongoId  } } : {}; 
+// const options = {}; 
+// const stream = await collection.find(query, options).stream(); stream.on("end", function(err) {  
+//   console.info(`closing stream now`);  
+//   setTimeout(() => {   process.exit();  }, serverShutDownMins); 
+// });
