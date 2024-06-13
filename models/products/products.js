@@ -40,6 +40,7 @@ const products = new Schema({
         type: String,
     },
     variation: [{}],
+    addons:[{}]
 })
 
 const Products = mongoose.model('products', products);
