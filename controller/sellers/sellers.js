@@ -24,7 +24,7 @@ export const updateSeller = async (req, res) => {
 
 export const getSellersList = async (req, res) => {
     const { category_id, seller_id } = req.body;
-    console.log(req.body, "seller-bdy")
+    console.log(req.query, "seller-bdy")
     const data = await Sellers.find(req.query);
     try {
         res.status(200).json(data)

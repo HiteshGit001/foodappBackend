@@ -21,7 +21,7 @@ const user = new Schema({
         type: {},
     },
     user_img: {
-        require: true,
+        require: false,
         type: String,
     },
     rating: {

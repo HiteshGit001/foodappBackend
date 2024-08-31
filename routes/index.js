@@ -5,7 +5,7 @@ import { addCategory, readAllCategory, updateCategory } from '../controller/cate
 import { addProduct, getProductList, updateProduct } from '../controller/products/products.js';
 import { _connectToES } from '../controller/elasticsearch.js';
 import { addSeller, getSellersList, updateSeller } from '../controller/sellers/sellers.js';
-import { addUser } from '../controller/user/user.js';
+import { addUser, getUser } from '../controller/user/user.js';
 
 const router = express.Router();
 router.post('/message', createRequest);
@@ -24,6 +24,7 @@ router.post('/update-seller', updateSeller);
 
 // user
 router.post('/add-user', addUser);
+router.get(`/get-user`,getUser);
 // elastic search
 router.post('/connect-to-es', async (req, res) => {
     const { index } = req.body;
